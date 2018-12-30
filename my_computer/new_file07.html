@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>视频播放控制</title>
+	</head>
+	<body>
+  <div style="text-align:center;">
+  	<div style="text-align: center;">
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="big()">大</button>
+  <button onclick="middle()">中</button>
+  <button onclick="small()">小</button>
+  </div>
+  <video id="video" width="420" style="margin-top:15px;"controls="controls">
+    <source src="./img/Luna Safari - Shelter (harp.ver).mp4wssecret=d8ea12dc2d50525a016bc89f652583de&wstime=1545989294" >
+         无法播放
+  </video>
+</div> 
+
+<script type="text/javascript">
+var myVideo=document.getElementById("video");
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function big()
+{ 
+myVideo.width=600; 
+} 
+
+function small()
+{ 
+myVideo.width=400; 
+} 
+
+function middle()
+{ 
+myVideo.width=480; 
+} 
+</script> 
+	</body>
+</html>
